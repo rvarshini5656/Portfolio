@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Rekadi Varshini
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.png)"></div>
+
+          <div class="img-text-wrapper">
+            <div>
+              <p>Resume</p>
+            </div>
+
+            <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/CodeClause_portfolio" target="_blank">My Resume</a>
+    </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.png)"></div>
+          <div class="img-text-wrapper">
+            <p>Internships</p>
+             <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/Alstom_DP" target="_blank">Internship at Cyient - Offline</a>
+    </div>
+    <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/CodeClause_portfolio" target="_blank">Internship at Cloud Clause - Online</a>
+    </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <p>Mini Projects</p>
+            <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/Gene_Folding" target="_blank">Gene_Folding - Python</a>
+    </div>
+    <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/Next-Gen-Speech-to-Text" target="_blank">Next-Gen-Speech-to-Text  - Html,Css,JavaScript</a>
+    </div>
+    <div class="subtitle">
+        <a href="https://gitlab.com/devikrishnamadhuri7/airline_passenger_satisfaction" target="_blank">
+Airline_Passenger_Satisfaction - Machine Learning</a>
+    </div>
+    <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/Email_Classification" target="_blank">Email_Classification - NLP</a>
+    </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.png)"></div>
+          <div class="img-text-wrapper">
+            <p>Coding Platforms</p>
+           <div class="subtitle">
+        <a href="https://www.hackerrank.com/profile/rvarshini5656" target="_blank">Hackerrank</a>
+    </div>
+    <div class="subtitle">
+        <a href="https://leetcode.com/u/rvarshini/" target="_blank">LeetCode</a>
+    </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+          <div class="img-text-wrapper">
+             <p>Certifications</p>
+         
+           <div class="subtitle">
+
+        <a href="https://github.com/rvarshini5656/Resume_Certifications" target="_blank">Certifications</a>
+    </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+          <div class="img-text-wrapper">
+             <p>Website</p>
+            <div class="logo-wrapper">
+              <img src="images/logos/dailysmarty.png" alt="">
+            </div>
+            <div class="subtitle">
+        <a href="https://github.com/rvarshini5656/CodeClause_portfolio" target="_blank">Portfolio</a>
+    </div>
+     <div class="subtitle">
+        <a href="https://github.com/rvarshini5656" target="_blank">Github Profile</a>
+    </div>
+            
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
